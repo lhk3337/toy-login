@@ -1,0 +1,21 @@
+@import "tailwindcss/base";
+@import "tailwindcss/components";
+@import "tailwindcss/utilities";
+
+body {
+  background-color: #85ddbd;
+}
+.app {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  padding-top: 40px;
+  padding: 40px 32px 32px;
+  /* padding: 32px; */
+  margin: 9.8vh auto;
+  border-radius: 1.6rem;
+  box-shadow: 0 0.1em 1em rgba(0, 0, 0, 0.12), 0 0.5em 0.6em rgba(0, 0, 0, 0.24);
+  width: 30rem;
+  height: 80vh;
+  background-color: white;
+}
