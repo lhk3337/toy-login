@@ -19,10 +19,10 @@ nunjucks.configure("views", {
 
 connect();
 
-app.use(morgan("dev"));
-app.use(express.static(path.join(__dirname, "public")));
-app.use(express.json());
-app.use(express.urlencoded({ extended: false }));
+app.use(morgan("dev")); // 웹 환경에서 로그 관리
+app.use(express.static(path.join(__dirname, "public"))); //express 정적 파일 제공
+app.use(express.json()); // json 형태의 데이터 해석
+app.use(express.urlencoded({ extended: false })); //x-www-form-urlencoded 해석
 
 app.use("/", indexRouter);
 app.use("/users", userRouter);
